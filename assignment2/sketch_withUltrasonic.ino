@@ -16,7 +16,7 @@ long duration;
 int distance;
 
 // Array to store IR sensor values
-const int IR_ARRAY_SIZE = 10; // Adjust this value to set the array size
+const int IR_ARRAY_SIZE = 10; 
 int irSensorArray[IR_ARRAY_SIZE] = {0}; // Initialize with zeros
 int irArrayIndex = 0; // Index for storing values in the array
 
@@ -81,7 +81,7 @@ void loop() {
   Serial.print(", ");
   Serial.println(irSensorValue);
 
-  // Read and handle response from the server (if any)
+  // Read and handle response from the server 
   if (Serial.available() > 0) {
     String response = Serial.readStringUntil('\n');
     Serial.println(response);
